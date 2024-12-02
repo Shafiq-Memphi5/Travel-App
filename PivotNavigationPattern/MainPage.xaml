@@ -1,0 +1,492 @@
+﻿<Page
+    x:Class="PivotNavigationPattern.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:PivotNavigationPattern"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <Grid>
+        <Grid.Background>
+            <ImageBrush Stretch="Fill"
+                        ImageSource="Assets/balloon.jpeg"/>
+        </Grid.Background>
+        <Pivot Title="Explore">
+            <PivotItem Header="Home"
+                       Padding="5">
+                <PivotItem.Background>
+                    <SolidColorBrush Color="gray" Opacity="0.5"/>
+                </PivotItem.Background>
+                <ScrollViewer VerticalScrollBarVisibility="Visible"
+                              HorizontalScrollBarVisibility="Visible"
+                              Height="450">
+                    <Grid>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="auto"/>
+                            <RowDefinition Height="auto"/>
+                            <RowDefinition Height="auto"/>
+                            <RowDefinition Height="auto"/>
+                            <RowDefinition Height="auto"/>
+                            <RowDefinition Height="auto"/>
+                        </Grid.RowDefinitions>
+                        <TextBlock Grid.Row="0"
+                                   Text="WELCOME TO THE WORLD OF TOURISM"
+                                   FontSize="25"
+                                   HorizontalAlignment="Center"/>
+                        <TextBlock Grid.Row="1"
+                                   Text="Discover Breathe taking destinations, vibrant cultures and unforgettable experiences. Your adventure starts here!"
+                                   HorizontalAlignment="Center"
+                                   Margin="10"
+                                   FontSize="15"/>
+                        <StackPanel Grid.Row="2"
+                                    Orientation="Horizontal"
+                                    Spacing="20"
+                                    HorizontalAlignment="Center">
+                            <Image Source="Assets\balloon.jpeg"
+                                   MaxHeight="150"/>
+                            <Image Source="Assets\fly.jpg"
+                                   MaxHeight="150"/>
+                        </StackPanel>
+                        <TextBlock Grid.Row="3"
+                                   Text="Featured Destinations"
+                                   FontSize="20"
+                                   HorizontalAlignment="Center"
+                                   Margin="0,20,0,5"/>
+                        <StackPanel Grid.Row="4"
+                                    Background="LightSlateGray"
+                                    Padding="10"
+                                    CornerRadius="10">
+                            <TextBlock Text="🌴 Bali, Indonesia"
+                                       FontSize="15"
+                                       Margin="10,0,0,5"/>
+                            <TextBlock Text="🌊 Santorini, Greece"
+                                       FontSize="15"
+                                       Margin="10,0,0,5"/>
+                            <TextBlock Text="🏖️ Machu Picchu, Peru"
+                                       FontSize="15"
+                                       Margin="10,0,0,5"/>
+                            <TextBlock Text="🏊 Venice, Italy"
+                                       FontSize="15"
+                                       Margin="10,0,0,5"/>
+                        </StackPanel>
+                        <Button Grid.Row="5"
+                                Content="Star Exploring"
+                                HorizontalAlignment="Center"
+                                FontSize="20"
+                                Background="DarkSlateGray"
+                                Margin="15"
+                                CornerRadius="10"/>
+                    </Grid>
+                </ScrollViewer>
+            </PivotItem>
+            <PivotItem Header="Destinations">
+                <PivotItem.Background>
+                    <SolidColorBrush Color="gray" Opacity="0.5"/>
+                </PivotItem.Background>
+                <ScrollViewer VerticalScrollBarVisibility="Auto"
+                              HorizontalScrollBarVisibility="Auto">
+                    <Grid>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="auto"/>
+                            <RowDefinition Height="auto"/>
+                            <RowDefinition Height="auto"/>
+                            <RowDefinition Height="auto"/>
+                            <RowDefinition Height="auto"/>
+                            <RowDefinition Height="auto"/>
+                        </Grid.RowDefinitions>
+                        <TextBlock Text="Most Popular Destinations"
+                                   HorizontalAlignment="Center"
+                                   FontSize="25"
+                                   Grid.Row="0"
+                                   Margin="10"/>
+                        <StackPanel Grid.Row="1"
+                                    Padding="20"
+                                    Margin="20"
+                                    CornerRadius="10"
+                                >
+                            <StackPanel.Background>
+                                <SolidColorBrush Color="White" Opacity="0.6"/>
+                            </StackPanel.Background>
+                            <Image Source="Assets\fly.jpg"
+                                   MaxHeight="200"
+                                   />
+                            <TextBlock Text="1. Paris, France"
+                                       FontSize="20"
+                                       Foreground="DarkSlateGray"/>
+                            <TextBlock Text="Immerse yourself in the romantic charm of the City of Lights, from the Eiffel Tower to charming cafés along the Seine."/>
+                        </StackPanel>
+                        <StackPanel Grid.Row="2"
+                                    Padding="20"
+                                    Margin="20"
+                                    CornerRadius="10"
+                                    >
+                            <StackPanel.Background>
+                                <SolidColorBrush Color="White" Opacity="0.6"/>
+                            </StackPanel.Background>
+                            <Image Source="Assets\fly.jpg"
+                                   MaxHeight="200"
+                                   />
+                            <TextBlock Text="2. Abu Dhabi, United Arab Emirates"
+                                       FontSize="20"
+                                       Foreground="DarkSlateGray"/>
+                            <TextBlock Text="Experience the luxurious allure of this modern oasis, featuring stunning architecture and desert adventures."/>
+                        </StackPanel>
+                        <StackPanel Grid.Row="3"
+                                    Padding="20"
+                                    Margin="20"
+                                    CornerRadius="10"
+                                    >
+                            <StackPanel.Background>
+                                <SolidColorBrush Color="White" Opacity="0.6"/>
+                            </StackPanel.Background>
+                            <Image Source="Assets\fly.jpg"
+                                   MaxHeight="200"
+                                   />
+                            <TextBlock Text="3. Kampala, Uganda"
+                                       FontSize="20"
+                                       Foreground="DarkSlateGray"/>
+                            <TextBlock Text="Discover the cultural richness of Uganda’s capital, with its bustling markets, historical sites, and warm hospitality."/>
+                        </StackPanel>
+                        <StackPanel Grid.Row="4"
+                                    Padding="20"
+                                    Margin="20"
+                                    CornerRadius="10"
+                                    >
+                            <StackPanel.Background>
+                                <SolidColorBrush Color="White" Opacity="0.6"/>
+                            </StackPanel.Background>
+                            <Image Source="Assets\fly.jpg"
+                                   MaxHeight="200"
+                                   />
+                            <TextBlock Text="4. Mombasa, Kenya"
+                                       FontSize="20"
+                                       Foreground="DarkSlateGray"/>
+                            <TextBlock Text="Relax on pristine beaches and explore the coastal beauty and Swahili heritage of this vibrant Kenyan city."/>
+                        </StackPanel>
+                        <StackPanel Grid.Row="5"
+                                    Padding="20"
+                                    Margin="20"
+                                    CornerRadius="10"
+                                    >
+                            <StackPanel.Background>
+                                <SolidColorBrush Color="White" Opacity="0.6"/>
+                            </StackPanel.Background>
+                            <Image Source="Assets\fly.jpg"
+                                   MaxHeight="200"
+                                   />
+                            <TextBlock Text="5. Mumbai, India"
+                                       FontSize="20"
+                                       Foreground="DarkSlateGray"/>
+                            <TextBlock Text="Dive into the bustling energy of India’s financial hub, where tradition meets modernity in every corner."/>
+                        </StackPanel>
+                    </Grid>
+                </ScrollViewer>
+            </PivotItem>
+            <PivotItem Header="Activities">
+                <PivotItem.Background>
+                    <SolidColorBrush Color="gray" Opacity="0.5"/>
+                </PivotItem.Background>
+                <ScrollViewer VerticalScrollBarVisibility="Auto"
+                               HorizontalScrollBarVisibility="Auto">
+                    <Grid>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="auto"/>
+                            <RowDefinition Height="auto"/>
+                            <RowDefinition Height="auto"/>
+                            <RowDefinition Height="auto"/>
+                            <RowDefinition Height="auto"/>
+                            <RowDefinition Height="auto"/>
+                        </Grid.RowDefinitions>
+                        <TextBlock Grid.Row="0"
+                                   Text="Popular Activities"
+                                   FontSize="25"
+                                   HorizontalAlignment="Center"
+                                   Margin="10"/>
+                        <StackPanel Grid.Row="1"
+                                    Margin="20"
+                                    Padding="20"
+                                    CornerRadius="10"
+                                    >
+                            <StackPanel.Background>
+                                <SolidColorBrush Color="White" Opacity="0.6"/>
+                            </StackPanel.Background>
+                            <Image Source="Assets\fly.jpg"
+                                   MaxHeight="200"/>
+                            <TextBlock Text="1. Nature Escapes"
+                                       Foreground="DarkSlateGray"
+                                       FontSize="20"/>
+                            <TextBlock Text="Relax in serene gardens, explore wildlife parks, or enjoy breathtaking coastal views."/>
+                        </StackPanel>
+                        <StackPanel Grid.Row="2"
+                                    Margin="20"
+                                    Padding="20"
+                                    CornerRadius="10"
+                                    >
+                            <StackPanel.Background>
+                                <SolidColorBrush Color="White" Opacity="0.6"/>
+                            </StackPanel.Background>
+                            <Image Source="Assets\fly.jpg"
+                                   MaxHeight="200"/>
+                            <TextBlock Text="2. Shopping"
+                                       Foreground="DarkSlateGray"
+                                       FontSize="20"/>
+                            <TextBlock Text="Explore vibrant markets, luxury malls, and unique boutiques for souvenirs and treasures."/>
+                        </StackPanel>
+                        <StackPanel Grid.Row="3"
+                                    Margin="20"
+                                    Padding="20"
+                                    CornerRadius="10"
+                                    >
+                            <StackPanel.Background>
+                                <SolidColorBrush Color="White" Opacity="0.6"/>
+                            </StackPanel.Background>
+                            <Image Source="Assets\fly.jpg"
+                                   MaxHeight="200"/>
+                            <TextBlock Text="3. Cultural Experiences"
+                                       Foreground="DarkSlateGray"
+                                       FontSize="20"/>
+                            <TextBlock Text="Immerse yourself in traditions with local dances, festivals, and cooking classes."/>
+                        </StackPanel>
+                        <StackPanel Grid.Row="4"
+                                    Margin="20"
+                                    Padding="20"
+                                    CornerRadius="10"
+                                    >
+                            <StackPanel.Background>
+                                <SolidColorBrush Color="White" Opacity="0.6"/>
+                            </StackPanel.Background>
+                            <Image Source="Assets\fly.jpg"
+                                   MaxHeight="200"/>
+                            <TextBlock Text="4. Adventure Sports"
+                                       Foreground="DarkSlateGray"
+                                       FontSize="20"/>
+                            <TextBlock Text="From desert safaris to water sports and mountain treks, fuel your adrenaline with thrilling activities."/>
+                        </StackPanel>
+                        <StackPanel Grid.Row="5"
+                                    Margin="20"
+                                    Padding="20"
+                                    CornerRadius="10"
+                                    >
+                            <StackPanel.Background>
+                                <SolidColorBrush Color="White" Opacity="0.6"/>
+                            </StackPanel.Background>
+                            <Image Source="Assets\fly.jpg"
+                                   MaxHeight="200"/>
+                            <TextBlock Text="5. City Tours"
+                                       Foreground="DarkSlateGray"
+                                       FontSize="20"/>
+                            <TextBlock Text="Dive into the heart of iconic cities with guided tours showcasing history, culture, and local life."/>
+                        </StackPanel>
+                    </Grid>
+                </ScrollViewer>
+            </PivotItem>
+            <PivotItem Header="Travel Tips">
+                <PivotItem.Background>
+                    <SolidColorBrush Color="gray" Opacity="0.5"/>
+                </PivotItem.Background>
+                <ScrollViewer VerticalScrollBarVisibility="Auto"
+                              HorizontalScrollBarVisibility="Auto">
+                    <Grid>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="auto"/>
+                            <RowDefinition Height="auto"/>
+                            <RowDefinition Height="auto"/>
+                            <RowDefinition Height="auto"/>
+                            <RowDefinition Height="auto"/>
+                            <RowDefinition Height="auto"/>
+                        </Grid.RowDefinitions>
+                        <TextBlock Grid.Row="0"
+                                   Text="Essential Tips for a Smooth Journey"
+                                   FontSize="25"
+                                   HorizontalAlignment="Center"
+                                   Margin="10"/>
+                        <StackPanel Grid.Row="1"
+                                    Margin="20"
+                                    Padding="20"
+                                    CornerRadius="10"
+                                    >
+                            <StackPanel.Background>
+                                <SolidColorBrush Color="White" Opacity="0.6"/>
+                            </StackPanel.Background>
+                            <Image Source="Assets\fly.jpg"
+                                   MaxHeight="200"/>
+                            <TextBlock Text="1. Plan Ahead"
+                                       Foreground="DarkSlateGray"
+                                       FontSize="20"/>
+                            <TextBlock Text="Book accommodations, tickets, and tours early to avoid last-minute stress."/>
+                        </StackPanel>
+                        <StackPanel Grid.Row="2"
+                                    Margin="20"
+                                    Padding="20"
+                                    CornerRadius="10"
+                                    >
+                            <StackPanel.Background>
+                                <SolidColorBrush Color="White" Opacity="0.6"/>
+                            </StackPanel.Background>
+                            <Image Source="Assets\fly.jpg"
+                                   MaxHeight="200"/>
+                            <TextBlock Text="2. Pack Smart"
+                                       Foreground="DarkSlateGray"
+                                       FontSize="20"/>
+                            <TextBlock Text="Carry essentials, dress for the weather, and leave room for souvenirs."/>
+                        </StackPanel>
+                        <StackPanel Grid.Row="3"
+                                    Margin="20"
+                                    Padding="20"
+                                    CornerRadius="10"
+                                    >
+                            <StackPanel.Background>
+                                <SolidColorBrush Color="White" Opacity="0.6"/>
+                            </StackPanel.Background>
+                            <Image Source="Assets\fly.jpg"
+                                   MaxHeight="200"/>
+                            <TextBlock Text="3. Stay Safe"
+                                       Foreground="DarkSlateGray"
+                                       FontSize="20"/>
+                            <TextBlock Text="Keep copies of important documents, be aware of your surroundings, and know local emergency numbers."/>
+                        </StackPanel>
+                        <StackPanel Grid.Row="4"
+                                    Margin="20"
+                                    Padding="20"
+                                    CornerRadius="10"
+                                    >
+                            <StackPanel.Background>
+                                <SolidColorBrush Color="White" Opacity="0.6"/>
+                            </StackPanel.Background>
+                            <Image Source="Assets\fly.jpg"
+                                   MaxHeight="200"/>
+                            <TextBlock Text="4. Learn Basics"
+                                       Foreground="DarkSlateGray"
+                                       FontSize="20"/>
+                            <TextBlock Text="Familiarize yourself with local customs, phrases, and etiquette for a seamless experience."/>
+                        </StackPanel>
+                        <StackPanel Grid.Row="5"
+                                    Margin="20"
+                                    Padding="20"
+                                    CornerRadius="10"
+                                    >
+                            <StackPanel.Background>
+                                <SolidColorBrush Color="White" Opacity="0.6"/>
+                            </StackPanel.Background>
+                            <Image Source="Assets\fly.jpg"
+                                   MaxHeight="200"/>
+                            <TextBlock Text="5. Stay Connected"
+                                       Foreground="DarkSlateGray"
+                                       FontSize="20"/>
+                            <TextBlock Text="Use offline maps and travel apps to navigate easily, even without internet access."/>
+                        </StackPanel>
+                    </Grid>
+                </ScrollViewer>
+            </PivotItem>
+            <PivotItem Header="Gallery">
+                <PivotItem.Background>
+                    <SolidColorBrush Color="gray" Opacity="0.5"/>
+                </PivotItem.Background>
+                <ScrollViewer VerticalScrollBarVisibility="Auto"
+                              HorizontalScrollBarVisibility="Auto">
+                    <Grid>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="auto"/>
+                            <RowDefinition Height="auto"/>
+                            <RowDefinition Height="auto"/>
+                            <RowDefinition Height="auto"/>
+                            <RowDefinition Height="auto"/>
+                            <RowDefinition Height="auto"/>
+                        </Grid.RowDefinitions>
+                        <TextBlock Grid.Row="0"
+                                   Text="Explore Stunning Views and Moments"
+                                   FontSize="25"
+                                   HorizontalAlignment="Center"
+                                   Margin="10"/>
+                        <StackPanel Grid.Row="1"
+                                    Margin="20"
+                                    Padding="20"
+                                    CornerRadius="10"
+                                    >
+                            <StackPanel.Background>
+                                <SolidColorBrush Color="White" Opacity="0.6"/>
+                            </StackPanel.Background>
+                            <Image Source="Assets\fly.jpg"
+                                   MaxHeight="200"/>
+                            <TextBlock Text="1. Landmark"
+                                       Foreground="DarkSlateGray"
+                                       FontSize="20"/>
+                            <TextBlock Text="Marvel at breathtaking photos of iconic sites and architectural wonders."/>
+                        </StackPanel>
+                        <StackPanel Grid.Row="2"
+                                    Margin="20"
+                                    Padding="20"
+                                    CornerRadius="10"
+                                    >
+                            <StackPanel.Background>
+                                <SolidColorBrush Color="White" Opacity="0.6"/>
+                            </StackPanel.Background>
+                            <Image Source="Assets\fly.jpg"
+                                   MaxHeight="200"/>
+                            <TextBlock Text="2. Nature"
+                                       Foreground="DarkSlateGray"
+                                       FontSize="20"/>
+                            <TextBlock Text="Explore serene landscapes, lush greenery, and captivating sunsets."/>
+                        </StackPanel>
+                        <StackPanel Grid.Row="3"
+                                    Margin="20"
+                                    Padding="20"
+                                    CornerRadius="10"
+                                    >
+                            <StackPanel.Background>
+                                <SolidColorBrush Color="White" Opacity="0.6"/>
+                            </StackPanel.Background>
+                            <Image Source="Assets\fly.jpg"
+                                   MaxHeight="200"/>
+                            <TextBlock Text="3. Culture"
+                                       Foreground="DarkSlateGray"
+                                       FontSize="20"/>
+                            <TextBlock Text="See vibrant festivals, traditional attire, and artistic expressions from around the world."/>
+                        </StackPanel>
+                        <StackPanel Grid.Row="4"
+                                    Margin="20"
+                                    Padding="20"
+                                    CornerRadius="10"
+                                    >
+                            <StackPanel.Background>
+                                <SolidColorBrush Color="White" Opacity="0.6"/>
+                            </StackPanel.Background>
+                            <Image Source="Assets\fly.jpg"
+                                   MaxHeight="200"/>
+                            <TextBlock Text="4. Cuisine"
+                                       Foreground="DarkSlateGray"
+                                       FontSize="20"/>
+                            <TextBlock Text="Feast your eyes on delicious dishes, street food, and gourmet creations."/>
+                        </StackPanel>
+                        <StackPanel Grid.Row="5"
+                                    Margin="20"
+                                    Padding="20"
+                                    CornerRadius="10"
+                                    >
+                            <StackPanel.Background>
+                                <SolidColorBrush Color="White" Opacity="0.6"/>
+                            </StackPanel.Background>
+                            <Image Source="Assets\fly.jpg"
+                                   MaxHeight="200"/>
+                            <TextBlock Text="5. Peopl"
+                                       Foreground="DarkSlateGray"
+                                       FontSize="20"/>
+                            <TextBlock Text="Experience the warmth and diversity of locals through candid moments and smiles."/>
+                        </StackPanel>
+                    </Grid>
+                </ScrollViewer>
+            </PivotItem>
+            <PivotItem Header="Contact">
+                <PivotItem.Background>
+                    <SolidColorBrush Color="gray" Opacity="0.5"/>
+                </PivotItem.Background>
+                <ScrollViewer VerticalScrollBarVisibility="Auto"
+                               HorizontalScrollBarVisibility="Auto">
+                    <WebView Source="https://google.com/"/>
+                </ScrollViewer>
+            </PivotItem>
+        </Pivot>
+    </Grid>
+</Page>
